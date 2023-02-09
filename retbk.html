@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    body {
+      font-family: "Poppins", sans-serif;
+      background-image: url("https://i.pinimg.com/564x/8c/74/bb/8c74bb4e959d7211e27c10b5980cb970.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; 
+    }
+    fieldset {
+      background-color: #254133;
+      backdrop-filter: blur(3px) saturate(180%);
+      -webkit-backdrop-filter: blur(3px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.5);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      width:40vw;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+    legend {
+      background-color: #cd5c5c;
+      color: white;
+      padding: 5px 10px;
+      margin: 0 auto;
+    }
+    .out {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+    }
+    label {
+      width: 50%;
+      text-align: right;
+      margin-right: 5px;
+      color: white;
+    }
+    form input {
+      border: none;
+      padding: 5px;
+      width: 100%;
+      height: 30px;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+    .buttons input {
+      padding: 5px 10px;
+      margin-right: 5px;
+    }
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="addbk.html">Add Book</a>
+    <a href="isubk.html">Issue Book</a>
+    <a href="delbk.html">Delete Book</a>
+    <a class="active" href="retbk.html">Return Book</a>
+    <a href="du.html">Delete User</a>
+    <a href="mnpage.html">Main Page</a>
+  </div>
+  <div align="center">
+  <fieldset style="margin-top:100px;">
+    <legend>RETURN BOOK</legend>
+    <form action="retnbk.py" method="post">
+      <div class="out">
+        <label>User id</label>
+        <input type=""text" name="unm"/>
+        <label>Book ID</label>
+        <input type="text" name="bid" />
+      </div>
+    
+    <div class="buttons center">
+      <input type="submit" value="RETURN BOOK" />
+      <input type="reset" value="clear" />
+    </div>
+  </form>
+  </fieldset>
+  </div>
+</body>
+</html>
